@@ -1,0 +1,11 @@
+aterm*foregroud:        white
+aterm*cursorColor:      blue
+aterm*font:             fixed
+aterm*visualBell:       false
+aterm*loginShell:       true
+aterm*scrollBar:        false
+URxvt*background:       black
+URxvt*foreground:        white
+URxvt*cursorColor:      blue
+URxvt*scrollBar:        true
+URxvt*scrollstyle:      plain

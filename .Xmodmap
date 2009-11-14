@@ -1,0 +1,12 @@
+clear Lock
+add Control = Caps_Lock 
+
+! The Windows key is Super_L, but for
+! fucked reasons there are wrongly two of them,
+! and we must disable the nonexistant one.
+clear Mod2
+keycode 0xce =
+add Mod2 = Super_L
+keysym Menu = Super_L
+
+clear mod4
