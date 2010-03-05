@@ -261,10 +261,6 @@ statusbar = {
   };
 };
 settings = {
-  core = {
-    real_name = "Nicolas LaCasse";
-    user_name = "nlacasse";
-    nick = "nlacasse";
-  };
+  core = { real_name = ""; user_name = "nlacasse"; nick = "nlacasse"; };
   "fe-text" = { actlist_sort = "refnum"; };
 };
