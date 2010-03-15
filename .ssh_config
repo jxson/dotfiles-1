@@ -1,3 +1,5 @@
+ForwardAgent yes
+
 Host sn
 HostName 204.13.164.201
 
@@ -8,3 +10,7 @@ Host irc.borderstylo.com
 host argumentd
 HostName argumentd.homeip.net
   LocalForward 8080 127.0.0.1:8080
+
+host dw103
+  User data
+  LocalForward 3316 127.0.0.1:3306
