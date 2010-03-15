@@ -12,3 +12,6 @@ alias sn='ssh silverninja.net'
 
 alias vi="vim"
 alias pacman="pacman-color"
+
+keychain --quiet ~/.ssh/id_dsa
+. ~/.keychain/`uname -n`-sh
