@@ -18,4 +18,5 @@ alias vi="vim"
 alias bitlbee="irssi -c localhost"
 alias pacman="pacman-color"
 
-alias cdpane="cd ~/proj/bs/pane"
+keychain --quiet ~/.ssh/id_dsa
+. ~/.keychain/`uname -n`-sh
