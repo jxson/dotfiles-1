@@ -12,6 +12,7 @@ alias sn='ssh silverninja.net'
 
 alias vi="vim"
 alias pacman="pacman-color"
+alias jspec="/opt/ruby1.8/lib/ruby/gems/1.8/gems/jspec-4.2.0/bin/jspec"
 
 keychain --quiet ~/.ssh/id_dsa
 . ~/.keychain/`uname -n`-sh
