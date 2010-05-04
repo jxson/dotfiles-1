@@ -18,14 +18,14 @@ set mouse=a
 set tw=80
 set fo+=t
 set listchars=
-set listchars=trail:°,tab:\|\|
+set listchars=trail:°,tab:\ \ 
 set list
 set cb+=unnamed
 set hlsearch
 
 :let mapleader = ","
 
-map <F1> :NERDTree <Enter>
+map <F1> :NERDTreeToggle <Enter>
 
 map <F2> :set mouse=a<Enter>:echo "MOUSE MODE ON"<Enter>
 map <F3> :set mouse= <Enter>:echo "MOUSE MODE OFF"<Enter>
