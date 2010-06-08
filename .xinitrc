@@ -32,7 +32,7 @@ fi
 $HOME/.dwm_statusbar &
 
 # Arrange screens
-xrandr --output DVI-I-1 --left-of DVI-I-2
+xrandr --output DVI-I-1 --right-of DVI-I-2
 
 # Start WM
 dwm;
