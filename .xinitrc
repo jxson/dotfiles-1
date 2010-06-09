@@ -8,8 +8,9 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 
 # merge in defaults and keymaps
 
-# Get apply kbd recognized.  Need this before xmodmap
-setxkbmap -verbose 10 -model pc105
+# Use this for the 105-key Apple keyboard.
+# Need to do this before xmodmap.
+# setxkbmap -verbose 10 -model pc105
 
 if [ -f $sysresources ]; then
     xrdb -merge $sysresources
@@ -31,7 +32,7 @@ fi
 $HOME/.dwm_statusbar &
 
 # Arrange screens
-xrandr --output DVI-I-1 --left-of DVI-I-2
+xrandr --output DVI-I-1 --right-of DVI-I-2
 
 # Start WM
 dwm;
