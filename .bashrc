@@ -13,6 +13,7 @@ alias ll="ls -l --color"
 alias la="ls -la --color"
 
 alias sn='ssh silverninja.net'
+alias fib='ssh -X fibonazi'
 
 alias vi="vim"
 alias bitlbee="irssi -c localhost"
