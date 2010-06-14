@@ -28,6 +28,9 @@ if [ -f "$usermodmap" ]; then
     xmodmap "$usermodmap"
 fi
 
+# Disable terminal bell
+xset -b
+
 # Set DWM status bar
 $HOME/.dwm_statusbar &
 
