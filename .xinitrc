@@ -6,6 +6,9 @@ usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
+# For 105-key apple kbd
+setxkbmap -verbose 10 -model pc105
+
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
@@ -23,9 +26,6 @@ fi
 if [ -f "$usermodmap" ]; then
     xmodmap "$usermodmap"
 fi
-
-# This makes the Fn Keys show pictures
-asusosd &
 
 # Stop touchpad while typing
 syndaemon -i 0.2 -d -K
