@@ -6,8 +6,9 @@ usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
-# For 105-key apple kbd
-setxkbmap -verbose 10 -model pc105
+# Use this for the 105-key Apple keyboard.
+# Need to do this before xmodmap.
+# setxkbmap -verbose 10 -model pc105
 
 # merge in defaults and keymaps
 
@@ -32,7 +33,6 @@ syndaemon -i 0.2 -d -K
 
 # Set DWM status bar
 $HOME/.dwm_statusbar &
-
 
 # Start WM
 dwm;
