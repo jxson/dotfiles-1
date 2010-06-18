@@ -39,3 +39,44 @@ map <Leader>f <Leader>lf
 map <Leader>r <Leader>lr
 map <Leader>b <Leader>lb
 map <Leader>j <Leader>lj
+
+" Remappings for Colemak
+" ----------------------
+
+" Standard VI 'Homerow' Arrows
+noremap n j
+noremap e k
+noremap i l
+
+" o/O = beginning/end of line
+noremap o ^
+noremap O $
+
+" s/S = Start/Start at BOL (inSert)
+noremap s i
+noremap S I
+
+" k/K = repeat/reverse last search
+noremap k n
+noremap K N
+
+" l/L = new Line below/above
+noremap l o
+noremap L O
+
+" Switch ; and :
+noremap ; :
+noremap : ;
+
+" j/J = Jump to end of word/WORD
+noremap j e
+noremap J E
+
+" inneR text objects
+onoremap r i
+
+" Split Pane quick switching
+noremap <C-h> <C-W>h
+noremap <C-i> <C-W>l
+noremap <C-n> <C-W>j
+noremap <C-e> <C-W>k
