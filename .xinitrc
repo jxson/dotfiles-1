@@ -31,6 +31,9 @@ fi
 # Stop touchpad while typing
 syndaemon -i 0.2 -d -K
 
+# Disable terminal bell
+xset -b
+
 # Set DWM status bar
 $HOME/.dwm_statusbar &
 

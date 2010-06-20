@@ -18,6 +18,3 @@ alias pacman="pacman-color"
 
 keychain --quiet ~/.ssh/id_dsa
 . ~/.keychain/`uname -n`-sh
-
-# Disable terminal bell
-xset -b
