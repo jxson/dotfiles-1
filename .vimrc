@@ -66,14 +66,13 @@ noremap L O
 
 " Switch ; and :
 noremap ; :
-noremap : ;
+
+" N = joiN liNe
+noremap N J
 
 " j/J = Jump to end of word/WORD
 noremap j e
 noremap J E
-
-" inneR text objects
-onoremap r i
 
 " Split Pane quick switching
 noremap <C-h> <C-W>h
