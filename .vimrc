@@ -9,7 +9,7 @@ set number
 set smarttab
 set autoindent
 set smartindent
-"set expandtab
+set expandtab
 set sw=2 ts=2
 set backspace=indent,eol,start
 set nowrap
