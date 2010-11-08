@@ -1,5 +1,5 @@
-export PATH=/usr/local/bin:/$PATH:/usr/X11R6/bin:/usr/X11R6/sbin
-export MANPATH=/usr/local/shar/man:$MANPATH:/usr/X11R6/man
+export PATH=~/bin:/usr/local/bin:/$PATH:/usr/X11R6/bin:/usr/X11R6/sbin
+export MANPATH=~/local/share/man:~/man:/usr/local/shar/man:$MANPATH:/usr/X11R6/man
 export EDITOR=/usr/bin/vim
 export PS1="[\#] \u@\h:\w> "
 export MAKEFLAGS="-j 5"
@@ -10,8 +10,6 @@ if [[ -s /home/nlacasse/.rvm/scripts/rvm ]] ; then source /home/nlacasse/.rvm/sc
 alias ls="ls -h --color"
 alias ll="ls -l --color"
 alias la="ls -la --color"
-
-alias sn='ssh silverninja.net'
 
 alias vi="vim"
 
