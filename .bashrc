@@ -1,8 +1,10 @@
-export PATH=/usr/local/bin:/$PATH:/usr/X11R6/bin:/usr/X11R6/sbin
+export PATH=/home/nlacasse/bin:/usr/local/bin:/$PATH:/usr/X11R6/bin:/usr/X11R6/sbin
 export MANPATH=/usr/local/shar/man:$MANPATH:/usr/X11R6/man
 export EDITOR=/usr/bin/vim
 export PS1="[\#] \u@\h:\w> "
 #export PS1="[\#] \w: "
+export MAKEFLAGS="-j 3"
+
 
 if [[ -s /home/nlacasse/.rvm/scripts/rvm ]] ; then source /home/nlacasse/.rvm/scripts/rvm ; fi
 
@@ -14,7 +16,6 @@ alias sn='ssh silverninja.net'
 alias fib='ssh -X fibonazi'
 
 alias vi="vim"
-alias pacman="pacman-color"
 
 keychain --quiet ~/.ssh/id_dsa
 . ~/.keychain/`uname -n`-sh
