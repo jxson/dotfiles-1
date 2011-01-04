@@ -23,6 +23,8 @@ set list
 set cb+=unnamed
 set hlsearch
 
+set popt=paper:letter,
+
 :let mapleader = ","
 
 map <F1> :NERDTreeToggle <Enter>
