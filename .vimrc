@@ -42,6 +42,10 @@ map <Leader>r <Leader>lr
 map <Leader>b <Leader>lb
 map <Leader>j <Leader>lj
 
+" Dont pop up warning when lusty cant start
+let g:LustyExplorerSuppressRubyWarning = 1
+let g:LustyJugglerSuppressRubyWarning = 1
+
 " Remappings for Colemak
 " ----------------------
 
