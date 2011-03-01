@@ -1,3 +1,4 @@
+filetype plugin indent on
 au BufRead,BufNewFile *.ljs* set filetype=ljavascript
 syntax on
 colorscheme desert
