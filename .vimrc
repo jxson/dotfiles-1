@@ -1,6 +1,9 @@
+filetype indent plugin on
 au BufRead,BufNewFile *.ljs* set filetype=ljavascript
-syntax on
-colorscheme desert
+
+syntax enable
+set background=dark
+colorscheme solarized
 
 set title
 set hidden
