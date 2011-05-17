@@ -4,6 +4,7 @@ au BufRead,BufNewFile *.ljs* set filetype=ljavascript
 syntax enable
 set background=dark
 colorscheme solarized
+call togglebg#map("<F5>")
 
 set title
 set hidden

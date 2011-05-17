@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/nlacasse/glass/nodules/test'
-let g:netrw_dirhist_2='/home/nlacasse/glass/disproof/lib/not/http'
-let g:netrw_dirhist_3='/home/nlacasse/glass/disproof/lib/disproof/scenarios'
-let g:netrw_dirhist_4='/home/nlacasse/glass/disproof/lib/proxy'
-let g:netrw_dirhist_5='/home/nlacasse/glass/clients/apps/viewmaster-iphone-app/www/javascripts/helpers'
-let g:netrw_dirhist_6='/home/nlacasse/glass/clients/doc/changelogs'
-let g:netrw_dirhist_7='/home/nlacasse/glass/clients/apps/firefox-extension/chrome/modules/helpers'
-let g:netrw_dirhist_8='/home/nlacasse/glass/clients/doc/changelogs'
-let g:netrw_dirhist_9='/home/nlacasse/dotfiles/.vim'
+let g:netrw_dirhist_cnt =0
