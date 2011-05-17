@@ -1,25 +1,16 @@
-aterm*foregroud:        white
-aterm*cursorColor:      blue
-aterm*font:             fixed
-aterm*visualBell:       false
-aterm*loginShell:       true
-aterm*scrollBar:        false
 urxvt*background:       black
 urxvt*foreground:        white
 urxvt*cursorColor:      blue
 urxvt*scrollBar:        true
 urxvt*scrollstyle:      plain
-urxvt*color4:           #0072ff
-urxvt*color12:          #1082ff
 urxvt*saveLines:        10000
 xterm*background:       black
 xterm*foreground:        white
 xterm*cursorColor:      blue
 xterm*scrollBar:        true
 xterm*scrollstyle:      plain
-xterm*color4:           #0072ff
-xterm*color12:          #1082ff
 xterm*saveLines:        10000
+
 !! drop in Solarized colorscheme for Xresources/Xdefaults
 
 !!SOLARIZED HEX     16/8 TERMCOL  XTERM/HEX   L*A*B      RGB         HSB
@@ -60,8 +51,8 @@ xterm*saveLines:        10000
 
 *background:            S_base03
 *foreground:            S_base00
-*fading:                40
-*fadeColor:             S_base03
+!!*fading:                40
+!!*fadeColor:             S_base03
 *cursorColor:           S_base1
 *pointerColorBackground:S_base01
 *pointerColorForeground:S_base1
