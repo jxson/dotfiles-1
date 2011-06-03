@@ -1,6 +1,3 @@
-urxvt*background:       black
-urxvt*foreground:        white
-urxvt*cursorColor:      blue
 urxvt*scrollBar:        true
 urxvt*scrollstyle:      plain
 urxvt*saveLines:        10000
