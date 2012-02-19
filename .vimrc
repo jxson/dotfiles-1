@@ -54,35 +54,35 @@ let g:LustyJugglerSuppressRubyWarning = 1
 " ----------------------
 
 " Standard VI 'Homerow' Arrows
-noremap n j
-noremap e k
-noremap i l
+" noremap n j
+" noremap e k
+" noremap i l
 
 " o/O = beginning/end of line
-noremap o ^
-noremap O $
+" noremap o ^
+" noremap O $
 
 " s/S = Start/Start at BOL (inSert)
-noremap s i
-noremap S I
+" noremap s i
+" noremap S I
 
 " k/K = repeat/reverse last search
-noremap k n
-noremap K N
+" noremap k n
+" noremap K N
 
 " l/L = new Line below/above
-noremap l o
-noremap L O
+" noremap l o
+" noremap L O
 
 " Switch ; and :
 noremap ; :
 
 " N = joiN liNe
-noremap N J
+" noremap N J
 
 " j/J = Jump to end of word/WORD
-noremap j e
-noremap J E
+" noremap j e
+" noremap J E
 
 " Split Pane quick switching
 noremap <C-h> <C-W>h
