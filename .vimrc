@@ -1,5 +1,4 @@
 filetype indent plugin on
-au BufRead,BufNewFile *.ljs* set filetype=ljavascript
 
 syntax enable
 set background=dark
@@ -40,6 +39,9 @@ map <F3> :set mouse= <Enter>:echo "MOUSE MODE OFF"<Enter>
 map <C-\> :sp<CR><C-]>
 map <F4> :exe ":!ctags -R&"<CR><CR>:echo "Ran ctags"<CR>
 
+" Remove trailing whitespace
+:nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+
 " Lusty helpers
 map <Leader>f <Leader>lf
 map <Leader>r <Leader>lr
@@ -49,6 +51,10 @@ map <Leader>j <Leader>lj
 " Dont pop up warning when lusty cant start
 let g:LustyExplorerSuppressRubyWarning = 1
 let g:LustyJugglerSuppressRubyWarning = 1
+
+" Settings for VimClojure
+let vimclojure#HighlightBuiltins=1      " Highlight Clojure's builtins
+let vimclojure#ParenRainbow=1           " Rainbow parentheses'!
 
 " Remappings for Colemak
 " ----------------------
