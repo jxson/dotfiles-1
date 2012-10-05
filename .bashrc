@@ -5,8 +5,6 @@ export PS1="[\#] \u@\h:\w> "
 export MAKEFLAGS="-j 5"
 #export PS1="[\#] \w: "
 
-if [[ -s /home/nlacasse/.rvm/scripts/rvm ]] ; then source /home/nlacasse/.rvm/scripts/rvm ; fi
-
 alias ls="ls -h --color"
 alias ll="ls -l --color"
 alias la="ls -la --color"
@@ -15,3 +13,9 @@ alias vi="vim"
 
 keychain --quiet ~/.ssh/id_dsa
 . ~/.keychain/`uname -n`-sh
+
+source ~/.local/bin/bashmarks.sh
+
+# RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
