@@ -1,7 +1,0 @@
-"1.0b2 (created: 2010/10/02 22:50:54)
-
-set autocomplete='!.*'
-set complete=bl
-set runtimepath=/home/nlacasse/.pentadactyl
-
-" vim: set ft=pentadactyl:
