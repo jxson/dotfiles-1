@@ -2,7 +2,7 @@
 
 while true 
 do
-    xsetroot -name "$(date +'%R %F')"
+    xsetroot -name "$(acpi | awk '{ print $3, $4 }' | sed s/","//g) | $(date +'%R %F')"
     sleep 10s
 done 
 
