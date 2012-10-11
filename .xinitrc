@@ -12,6 +12,9 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 # Must be before xmodmap
 setxkbmap -option ctrl:nocaps
 
+# Bind volume and Fn keys
+xbindkeys &
+
 if [ -f $sysresources ]; then
     xrdb -merge $sysresources
 fi
