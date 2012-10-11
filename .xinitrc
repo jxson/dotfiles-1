@@ -8,9 +8,9 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 
 # merge in defaults and keymaps
 
-# Use this for the 105-key Apple keyboard.
-# Need to do this before xmodmap.
-# setxkbmap -verbose 10 -model pc105
+# Caps -> Ctrl
+# Must be before xmodmap
+setxkbmap -option ctrl:nocaps
 
 if [ -f $sysresources ]; then
     xrdb -merge $sysresources
