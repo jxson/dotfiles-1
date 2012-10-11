@@ -59,39 +59,39 @@ let vimclojure#ParenRainbow=1           " Rainbow parentheses'!
 " Remappings for Colemak
 " ----------------------
 
-" Standard VI 'Homerow' Arrows
-noremap n j
-noremap e k
-noremap i l
-
-" o/O = beginning/end of line
-noremap o ^
-noremap O $
-
-" s/S = Start/Start at BOL (inSert)
-noremap s i
-noremap S I
-
-" k/K = repeat/reverse last search
-noremap k n
-noremap K N
-
-" l/L = new Line below/above
-noremap l o
-noremap L O
-
-" Switch ; and :
-noremap ; :
-
-" N = joiN liNe
-noremap N J
-
-" j/J = Jump to end of word/WORD
-noremap j e
-noremap J E
-
-" Split Pane quick switching
-noremap <C-h> <C-W>h
-noremap <C-i> <C-W>l
-noremap <C-n> <C-W>j
-noremap <C-e> <C-W>k
+"" Standard VI 'Homerow' Arrows
+"noremap n j
+"noremap e k
+"noremap i l
+"
+"" o/O = beginning/end of line
+"noremap o ^
+"noremap O $
+"
+"" s/S = Start/Start at BOL (inSert)
+"noremap s i
+"noremap S I
+"
+"" k/K = repeat/reverse last search
+"noremap k n
+"noremap K N
+"
+"" l/L = new Line below/above
+"noremap l o
+"noremap L O
+"
+"" Switch ; and :
+"noremap ; :
+"
+"" N = joiN liNe
+"noremap N J
+"
+"" j/J = Jump to end of word/WORD
+"noremap j e
+"noremap J E
+"
+"" Split Pane quick switching
+"noremap <C-h> <C-W>h
+"noremap <C-i> <C-W>l
+"noremap <C-n> <C-W>j
+"noremap <C-e> <C-W>k
