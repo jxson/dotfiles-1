@@ -8,12 +8,25 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 
 # merge in defaults and keymaps
 
-# Caps -> Ctrl
+# Caps -> Esc
 # Must be before xmodmap
-setxkbmap -option ctrl:nocaps
+setxkbmap -option caps:escape
+
+# Caps -> Ctrl
+# setxkbmap -option ctrl:nocaps
 
 # Bind volume and Fn keys
 xbindkeys &
+
+# Turn off trackpad while typing
+# -i 2 sets the idle time to 2 seconds. The idle time specifies how many seconds to wait after the last key-press before enabling the touchpad again. 
+# -t tells the daemon not to disable mouse movement when typing and only disable tapping and scrolling. 
+# -k tells the daemon to ignore modifier keys when monitoring keyboard activity (e.g.: allows Ctrl+Left Click). 
+# -d starts as a daemon, in the background. 
+syndaemon -t -k -i 2 -d &
+
+# Detect fat palms on the trackpad
+synclient PalmDetect=1
 
 if [ -f $sysresources ]; then
     xrdb -merge $sysresources
