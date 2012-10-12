@@ -1,3 +1,4 @@
-(xbindkey '("XF86Sleep") "sudo pm-suspend")
+;(xbindkey '("XF86Sleep") "sudo pm-suspend")
 (xbindkey '("XF86AudioRaiseVolume") "amixer set Master 2dB+ unmute")
 (xbindkey '("XF86AudioLowerVolume") "amixer set Master 2dB- unmute")
+(xbindkey '("XF86Launch1") "synclient TouchpadOff=$(synclient -l | grep -c 'TouchpadOff.*=.*0')")
