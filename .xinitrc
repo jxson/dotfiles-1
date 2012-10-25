@@ -10,7 +10,7 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 
 # Caps -> Esc
 # Must be before xmodmap
-setxkbmap -variant colemak -option caps:escape
+setxkbmap -option caps:escape
 
 # Caps -> Ctrl
 # setxkbmap -option ctrl:nocaps
