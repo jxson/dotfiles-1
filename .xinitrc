@@ -37,5 +37,12 @@ $HOME/.dwm_statusbar &
 # Arrange screens
 xrandr --output DVI-I-1 --right-of DVI-I-2
 
+# Show the time in the status bar
+while true; do
+  xsetroot -name "$( date +"%R %F" )"
+  sleep 1m    # Update time every minute
+done &
+
+
 # Start WM
 dwm;
