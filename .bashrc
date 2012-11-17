@@ -15,3 +15,5 @@ alias vi="vim"
 
 keychain --quiet ~/.ssh/id_dsa
 . ~/.keychain/`uname -n`-sh
+
+source ~/.local/bin/bashmarks.sh
