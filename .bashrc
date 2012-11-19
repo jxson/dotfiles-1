@@ -1,9 +1,11 @@
-export PATH=~/bin:/usr/local/bin:/$PATH:/usr/X11R6/bin:/usr/X11R6/sbin
+export PATH=~/bin:/usr/local/bin:/$PATH:/usr/X11R6/bin:/usr/X11R6/sbin:~/whirr-0.8.1/bin:~/storm-0.7.4/bin:~/elastic-mapreduce-ruby
 export MANPATH=~/local/share/man:~/man:/usr/local/shar/man:$MANPATH:/usr/X11R6/man
 export EDITOR=/usr/bin/vim
 export PS1="[\#] \u@\h:\w> "
 export MAKEFLAGS="-j 5"
 #export PS1="[\#] \w: "
+
+source ~/.aws_keys
 
 alias ls="ls -h --color"
 alias ll="ls -l --color"
