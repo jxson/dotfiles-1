@@ -28,6 +28,9 @@ if [ -f "$usermodmap" ]; then
     xmodmap "$usermodmap"
 fi
 
+# Fake a WM name that java recognizes
+wmname LG3D
+
 # Disable terminal bell
 xset b off
 xset b 0 0 0
