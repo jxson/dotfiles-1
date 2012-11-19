@@ -29,7 +29,8 @@ if [ -f "$usermodmap" ]; then
 fi
 
 # Disable terminal bell
-xset -b
+xset b off
+xset b 0 0 0
 
 # Set DWM status bar
 $HOME/.dwm_statusbar &
