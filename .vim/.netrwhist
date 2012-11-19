@@ -1,4 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/nlacasse/okcl/omniscience/lib/omniscience'
 let g:netrw_dirhist_2='/home/nlacasse/.vim'
+let g:netrw_dirhist_3='/etc/conf.d'
+let g:netrw_dirhist_4='/home/nlacasse/hbase-0.94.1/target/test-data/00c8bd84-5c9a-4c5d-9879-ac8a6d721b41/regiondir/recovered.edits'
+let g:netrw_dirhist_5='/home/nlacasse/okcl/creeper/src/clj/okcupidlabs/creeper/services/facebook'
+let g:netrw_dirhist_6='/home/nlacasse/okcl/creeper/test/clj/okcupidlabs/creeper/test/services/facebook'
