@@ -1,6 +1,6 @@
 source /etc/profile
 export EC2_HOME=~/ec2-api-tools-1.6.4
-export PATH=~/bin:/usr/local/bin:/$PATH:/usr/X11R6/bin:/usr/X11R6/sbin:$EC2_HOME/bin:~/storm-0.8.1/bin
+export PATH=~/bin:/usr/local/bin:/$PATH:/usr/X11R6/bin:/usr/X11R6/sbin:$EC2_HOME/bin:~/storm-0.8.1/bin:~/.gem/ruby/1.9.1/bin:/opt/android-sdk/platform-tools
 export MANPATH=~/local/share/man:~/man:/usr/local/shar/man:$MANPATH:/usr/X11R6/man
 export EDITOR=/usr/bin/vim
 export PS1="[\#] \u@\h:\w> "
