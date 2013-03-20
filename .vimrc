@@ -19,6 +19,7 @@ set nowrap
 set visualbell t_vb=
 set mouse=a
 set tw=80
+set colorcolumn=80
 set fo+=t
 set listchars=
 set listchars=trail:°,tab:\ \ 
@@ -52,9 +53,22 @@ map <Leader>j <Leader>lj
 let g:LustyExplorerSuppressRubyWarning = 1
 let g:LustyJugglerSuppressRubyWarning = 1
 
-" Settings for VimClojure
-let vimclojure#HighlightBuiltins=1      " Highlight Clojure's builtins
-let vimclojure#ParenRainbow=1           " Rainbow parentheses'!
+" Rainbow Parens
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+let g:rbpt_colorpairs = [
+    \ ['gray',        'white'],
+    \ ['black',       'violet'],
+    \ ['darkmagenta', 'indigo'],
+    \ ['Darkblue',    'blue'],
+    \ ['darkgreen',   'green'],
+    \ ['darkcyan',    'yellow'],
+    \ ['darkred',     'orange'],
+    \ ['red',         'red'],
+    \ ]
 
 " Remappings for Colemak
 " ----------------------
