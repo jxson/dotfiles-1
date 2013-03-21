@@ -56,19 +56,16 @@ let g:LustyJugglerSuppressRubyWarning = 1
 " Rainbow Parens
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
+"au Syntax * RainbowParenthesesLoadSquare
+"au Syntax * RainbowParenthesesLoadBraces
 
 let g:rbpt_colorpairs = [
-    \ ['gray',        'white'],
-    \ ['black',       'violet'],
-    \ ['darkmagenta', 'indigo'],
-    \ ['Darkblue',    'blue'],
-    \ ['darkgreen',   'green'],
-    \ ['darkcyan',    'yellow'],
-    \ ['darkred',     'orange'],
-    \ ['red',         'red'],
-    \ ]
+          \ ['1', 'red'],
+          \ ['2', 'green'],
+          \ ['6', 'cyan'],
+          \ ['3', 'yellow'],
+          \ ['4', 'blue'],
+          \ ]
 
 " Remappings for Colemak
 " ----------------------
