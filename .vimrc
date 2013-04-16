@@ -67,6 +67,13 @@ let g:rbpt_colorpairs = [
           \ ['4', 'blue'],
           \ ]
 
+" vim-clojure-static
+" ------------------
+let g:clojure_align_multiline_strings = 1
+
+let g:clojure_fuzzy_indent = 1
+let g:clojure_fuzzy_indent_patterns = ['^with', '^def', '^let', '^match']
+
 " Remappings for Colemak
 " ----------------------
 
@@ -100,6 +107,10 @@ noremap N J
 " j/J = Jump to end of word/WORD
 noremap j e
 noremap J E
+
+" inneR text objects
+" e.g. dip (delete inner paragraph) is now drp
+onoremap r i
 
 " Split Pane quick switching
 noremap <C-h> <C-W>h
