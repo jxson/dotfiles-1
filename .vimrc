@@ -21,8 +21,7 @@ set mouse=a
 set tw=80
 set colorcolumn=80
 set fo+=t
-set listchars=
-set listchars=trail:°,tab:\ \ 
+set listchars=trail:°,tab:\ \
 set list
 set cb+=unnamed
 set hlsearch
@@ -33,21 +32,12 @@ set popt=paper:letter,
 
 map <F1> :NERDTreeToggle <Enter>
 
-map <F2> :set mouse=a<Enter>:echo "MOUSE MODE ON"<Enter>
-map <F3> :set mouse= <Enter>:echo "MOUSE MODE OFF"<Enter>
-
-" Ctag helpers
-map <C-\> :sp<CR><C-]>
-map <F4> :exe ":!ctags -R&"<CR><CR>:echo "Ran ctags"<CR>
-
 " Remove trailing whitespace
-:nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+:nnoremap <silent> <F2> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 " Lusty helpers
 map <Leader>f <Leader>lf
-map <Leader>r <Leader>lr
 map <Leader>b <Leader>lb
-map <Leader>j <Leader>lj
 
 " Dont pop up warning when lusty cant start
 let g:LustyExplorerSuppressRubyWarning = 1
