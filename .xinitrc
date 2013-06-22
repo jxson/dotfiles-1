@@ -35,7 +35,7 @@ xset -b
 $HOME/.dwm_statusbar &
 
 # Arrange screens
-xrandr --output DVI-I-1 --right-of DVI-I-2
+xrandr --output DVI-I-0 --auto --primary --left-of DVI-I-1
 
 # Show the time in the status bar
 while true; do
