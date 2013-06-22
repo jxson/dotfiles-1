@@ -1,9 +1,4 @@
 ForwardAgent yes
 
-Host eng
-HostName eng.borderstylo.com
-  LocalForward 127.0.0.1:6667 127.0.0.1:6667
-  LocalForward 2222 172.16.30.15:22
-
 Host irie
 HostName iriecycle.net
