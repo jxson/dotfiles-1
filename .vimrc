@@ -56,6 +56,11 @@ let g:LustyJugglerSuppressRubyWarning = 1
 let vimclojure#HighlightBuiltins=1      " Highlight Clojure's builtins
 let vimclojure#ParenRainbow=1           " Rainbow parentheses'!
 
+" vimlatex
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor = "latex"
+set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
+
 " Remappings for Colemak
 " ----------------------
 
