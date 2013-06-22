@@ -4,6 +4,7 @@ export EDITOR=/usr/bin/vim
 export PS1="[\#] \u@\h:\w> "
 export MAKEFLAGS="-j 5"
 #export PS1="[\#] \w: "
+export LANG="en_US.UTF-8"
 
 if [[ -s /home/nlacasse/.rvm/scripts/rvm ]] ; then source /home/nlacasse/.rvm/scripts/rvm ; fi
 
