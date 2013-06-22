@@ -1,2 +1,4 @@
+ForwardAgent yes
+
 Host irie
-Hostname iriecycle.net
+HostName iriecycle.net

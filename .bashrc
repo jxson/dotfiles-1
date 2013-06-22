@@ -1,6 +1,4 @@
-source /etc/profile
-export EC2_HOME=~/ec2-api-tools-1.6.4
-export PATH=~/bin:/usr/local/bin:/$PATH:/usr/X11R6/bin:/usr/X11R6/sbin:$EC2_HOME/bin:~/storm-0.8.1/bin:~/.gem/ruby/1.9.1/bin:/opt/android-sdk/platform-tools
+export PATH=~/bin:/usr/local/bin:/$PATH:/usr/X11R6/bin:/usr/X11R6/sbin:/opt/android-sdk/platform-tools
 export MANPATH=~/local/share/man:~/man:/usr/local/shar/man:$MANPATH:/usr/X11R6/man
 export EDITOR=/usr/bin/vim
 export PS1="[\#] \u@\h:\w> "
@@ -17,8 +15,3 @@ keychain --quiet ~/.ssh/id_dsa
 . ~/.keychain/`uname -n`-sh
 
 source ~/.local/bin/bashmarks.sh
-
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-source ~/bin/aws_keys.sh

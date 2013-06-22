@@ -74,7 +74,7 @@ noremap o ^
 noremap O $
 
 " s/S = Start/Start at BOL (inSert)
-noremap s i
+ noremap s i
 noremap S I
 
 " k/K = repeat/reverse last search
