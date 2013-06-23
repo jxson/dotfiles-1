@@ -1,9 +1,7 @@
 #!/bin/sh
 # $Xorg: xinitrc.cpp,v 1.3 2000/08/17 19:54:30 cpqbld Exp $
 
-userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
-sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
 # merge in defaults and keymaps
@@ -28,31 +26,19 @@ syndaemon -t -k -i 2 -d &
 # Detect fat palms on the trackpad
 synclient PalmDetect=1
 
-if [ -f $sysresources ]; then
-    xrdb -merge $sysresources
-fi
-
 if [ -f $sysmodmap ]; then
     xmodmap $sysmodmap
-fi
-
-if [ -f "$userresources" ]; then
-    xrdb -merge "$userresources"
 fi
 
 if [ -f "$usermodmap" ]; then
     xmodmap "$usermodmap"
 fi
-
 # Disable terminal bell
 xset -b
 
 # Show the battery and time in the status bar
 while true
 do
-  xsetroot -name "$(acpi | awk '{ print $3, $4 }' | sed s/","//g) | $(date +'%R %F')"
+  xsetroot -name "WHUUUUTTTT $(acpi | awk '{ print $3, $4 }' | sed s/","//g) | $(date +'%R %F')"
   sleep 10s
 done &
-
-# Start WM
-dwm;
