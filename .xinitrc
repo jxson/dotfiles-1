@@ -47,9 +47,6 @@ fi
 # Disable terminal bell
 xset -b
 
-# Set DWM status bar
-$HOME/.dwm_statusbar &
-
 # Arrange screens
 xrandr --output DVI-I-0 --auto --primary --left-of DVI-I-1
 
