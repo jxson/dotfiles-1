@@ -39,6 +39,6 @@ xset -b
 # Show the battery and time in the status bar
 while true
 do
-  xsetroot -name "WHUUUUTTTT $(acpi | awk '{ print $3, $4 }' | sed s/","//g) | $(date +'%R %F')"
+  xsetroot -name "$(acpi | awk '{ print $3, $4 }' | sed s/","//g) | $(date +'%R %F')"
   sleep 10s
 done &
