@@ -47,15 +47,12 @@ fi
 # Disable terminal bell
 xset -b
 
-# Arrange screens
-xrandr --output DVI-I-0 --auto --primary --left-of DVI-I-1
-
-# Show the time in the status bar
-while true; do
-  xsetroot -name "$( date +"%R %F" )"
-  sleep 1m    # Update time every minute
+# Show the battery and time in the status bar
+while true
+do
+  xsetroot -name "$(acpi | awk '{ print $3, $4 }' | sed s/","//g) | $(date +'%R %F')"
+  sleep 10s
 done &
-
 
 # Start WM
 dwm;
