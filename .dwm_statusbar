@@ -1,8 +1,0 @@
-#!/bin/bash
-
-while true 
-do
-    xsetroot -name "$(date +'%R %F')"
-    sleep 10s
-done 
-
