@@ -1,4 +1,5 @@
-export PATH=~/bin:~/node_modules/.bin:/usr/local/bin:/$PATH:/usr/X11R6/bin:/usr/X11R6/sbin:~/whirr-0.8.1/bin:~/storm-0.7.4/bin:~/elastic-mapreduce-ruby:~/.gem/ruby/1.9.1/bin
+export PATH=~/bin:~/node_modules/.bin:/usr/local/bin:/$PATH:/usr/X11R6/bin:/usr/X11R6/sbin
+>>>>>>> a6989df9a41c78ff60c1b5c229972b6229393728
 export MANPATH=~/local/share/man:~/man:/usr/local/shar/man:$MANPATH:/usr/X11R6/man
 export EDITOR=/usr/bin/vim
 export PS1="[\#] \u@\h:\w> "
@@ -22,7 +23,3 @@ keychain --quiet ~/.ssh/id_dsa
 . ~/.keychain/`uname -n`-sh
 
 source ~/.local/bin/bashmarks.sh
-
-# RVM
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
