@@ -1,5 +1,4 @@
 export PATH=~/bin:~/node_modules/.bin:/usr/local/bin:/$PATH:/usr/X11R6/bin:/usr/X11R6/sbin
->>>>>>> a6989df9a41c78ff60c1b5c229972b6229393728
 export MANPATH=~/local/share/man:~/man:/usr/local/shar/man:$MANPATH:/usr/X11R6/man
 export EDITOR=/usr/bin/vim
 export PS1="[\#] \u@\h:\w> "
