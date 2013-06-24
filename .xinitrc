@@ -28,18 +28,18 @@ if [ -f "$usermodmap" ]; then
     xmodmap "$usermodmap"
 fi
 
-# Fake a WM name that java recognizes
-wmname LG3D
-
 # Disable terminal bell
-xset b off
-xset b 0 0 0
-
-# Set DWM status bar
-$HOME/.dwm_statusbar &
+xset -b
 
 # Arrange screens
-xrandr --output DVI-I-1 --left-of DVI-I-2
+xrandr --output DVI-I-0 --auto --primary --left-of DVI-I-1
+
+# Show the time in the status bar
+while true; do
+  xsetroot -name "$( date +"%R %F" )"
+  sleep 1m    # Update time every minute
+done &
+
 
 # Start WM
 dwm;
