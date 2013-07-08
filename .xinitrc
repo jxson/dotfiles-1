@@ -32,7 +32,7 @@ fi
 xset -b
 
 # Arrange screens
-xrandr --output DVI-I-0 --auto --primary --left-of DVI-I-1
+xrandr --output DVI-I-1 --auto --primary --left-of DVI-I-2
 
 # Show the time in the status bar
 while true; do
