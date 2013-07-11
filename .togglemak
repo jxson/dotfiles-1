@@ -1,2 +1,11 @@
 #!/bin/bash
-synclient TouchpadOff=$(synclient -l | grep -c 'TouchpadOff.*=.*0')
+if [ $(synclient -l | grep -c 'TouchpadOff.*=.*0') -gt 0 ]; then
+  echo "Enabling Colemak mode"
+  synclient TouchpadOff=1
+  setxkbmap us -variant colemak
+else
+  echo "Enabling QWERTY mode"
+  synclient TouchpadOff=0
+  setxkbmap us
+fi
+
