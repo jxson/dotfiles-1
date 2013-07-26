@@ -1,3 +1,9 @@
+clear Lock
+add Control = Caps_Lock
+
+! The Windows key is Super_L, but for
+! fucked reasons there are wrongly two of them,
+! and we must disable the nonexistant one.
 clear Mod2
 add Mod2 = Super_L Super_R Print
 

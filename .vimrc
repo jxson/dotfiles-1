@@ -19,9 +19,9 @@ set nowrap
 set visualbell t_vb=
 set mouse=a
 set tw=80
+set colorcolumn=80
 set fo+=t
-set listchars=
-set listchars=trail:°,tab:\ \ 
+set listchars=trail:°,tab:\ \
 set list
 set cb+=unnamed
 set hlsearch
@@ -32,29 +32,37 @@ set popt=paper:letter,
 
 map <F1> :NERDTreeToggle <Enter>
 
-map <F2> :set mouse=a<Enter>:echo "MOUSE MODE ON"<Enter>
-map <F3> :set mouse= <Enter>:echo "MOUSE MODE OFF"<Enter>
-
-" Ctag helpers
-map <C-\> :sp<CR><C-]>
-map <F4> :exe ":!ctags -R&"<CR><CR>:echo "Ran ctags"<CR>
-
 " Remove trailing whitespace
-:nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+:nnoremap <silent> <F2> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 " Lusty helpers
 map <Leader>f <Leader>lf
-map <Leader>r <Leader>lr
 map <Leader>b <Leader>lb
-map <Leader>j <Leader>lj
 
 " Dont pop up warning when lusty cant start
 let g:LustyExplorerSuppressRubyWarning = 1
 let g:LustyJugglerSuppressRubyWarning = 1
 
-" Settings for VimClojure
-let vimclojure#HighlightBuiltins=1      " Highlight Clojure's builtins
-let vimclojure#ParenRainbow=1           " Rainbow parentheses'!
+" Rainbow Parens
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+"au Syntax * RainbowParenthesesLoadSquare
+"au Syntax * RainbowParenthesesLoadBraces
+
+let g:rbpt_colorpairs = [
+          \ ['1', 'red'],
+          \ ['2', 'green'],
+          \ ['6', 'cyan'],
+          \ ['3', 'yellow'],
+          \ ['4', 'blue'],
+          \ ]
+
+" vim-clojure-static
+" ------------------
+let g:clojure_align_multiline_strings = 1
+
+let g:clojure_fuzzy_indent = 1
+let g:clojure_fuzzy_indent_patterns = ['^with', '^def', '^let', '^match']
 
 " vimlatex
 set grepprg=grep\ -nH\ $*
@@ -74,7 +82,7 @@ noremap o ^
 noremap O $
 
 " s/S = Start/Start at BOL (inSert)
- noremap s i
+noremap s i
 noremap S I
 
 " k/K = repeat/reverse last search
@@ -94,6 +102,10 @@ noremap N J
 " j/J = Jump to end of word/WORD
 noremap j e
 noremap J E
+
+" inneR text objects
+" e.g. dip (delete inner paragraph) is now drp
+onoremap r i
 
 " Split Pane quick switching
 noremap <C-h> <C-W>h
