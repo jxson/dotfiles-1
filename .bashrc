@@ -5,13 +5,6 @@ export PS1="[\#] \u@\h:\w> "
 export MAKEFLAGS="-j 5"
 #export PS1="[\#] \w: "
 
-source ~/.aws_keys
-
-# connect to aws with mosh
-moshit () {
-  mosh --ssh="ssh -i ~/okcl/creeper/keys/creeper.pem" ubuntu@$1;
-}
-
 alias ls="ls -h --color"
 alias ll="ls -l --color"
 alias la="ls -la --color"
