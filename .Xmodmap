@@ -1,6 +1,5 @@
-keycode 66 = Control_L
 clear Lock
-add Control = Control_L
+add Control = Caps_Lock
 
 ! The Windows key is Super_L, but for
 ! fucked reasons there are wrongly two of them,

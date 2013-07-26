@@ -17,7 +17,7 @@
   changed = green
   untracked = cyan
 [user]
-  email = nlacasse@borderstylo.com
+  email = nlacasse@alum.mit.edu
   name = Nicolas LaCasse
 [branch]
   autosetupmerge = true
