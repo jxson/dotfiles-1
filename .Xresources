@@ -1,12 +1,12 @@
 urxvt*scrollBar:        true
 urxvt*scrollstyle:      plain
-urxvt*saveLines:        10000
+urxvt*saveLines:        100000
 xterm*background:       black
 xterm*foreground:        white
 xterm*cursorColor:      blue
 xterm*scrollBar:        true
 xterm*scrollstyle:      plain
-xterm*saveLines:        10000
+xterm*saveLines:        100000
 
 !! drop in Solarized colorscheme for Xresources/Xdefaults
 
