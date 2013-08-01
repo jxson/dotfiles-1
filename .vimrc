@@ -43,6 +43,9 @@ map <Leader>b <Leader>lb
 let g:LustyExplorerSuppressRubyWarning = 1
 let g:LustyJugglerSuppressRubyWarning = 1
 
+" Brief mode for javascript
+let g:SimpleJsIndenter_BriefMode = 1
+
 " Rainbow Parens
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
